@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: api-gateway
-
-spring:
   cloud:
     gateway:
       discovery:
