@@ -10,7 +10,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: ${KEYCLOAK_AUTH_SERVER_URL}/realms/tingeso
-          jwk-set-uri: ${KEYCLOAK_AUTH_SERVER_URL}/realms/tingeso/protocol/openid-connect/certs
+          #jwk-set-uri: ${KEYCLOAK_AUTH_SERVER_URL}/realms/tingeso/protocol/openid-connect/certs
   
     
   cloud:
