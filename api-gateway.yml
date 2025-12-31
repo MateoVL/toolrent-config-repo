@@ -9,8 +9,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          #issuer-uri: ${KEYCLOAK_AUTH_SERVER_URL}/realms/tingeso
-          jwk-set-uri: ${KEYCLOAK_AUTH_SERVER_URL}/realms/tingeso/protocol/openid-connect/certs
+          issuer-uri: http://keycloak:8090/realms/tingeso
+          jwk-set-uri: http://keycloak:8090/realms/tingeso/protocol/openid-connect/certs
   
     
   cloud:
