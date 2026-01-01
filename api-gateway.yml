@@ -36,7 +36,13 @@ spring:
         - id: client-service
           uri: lb://CLIENT-SERVICE
           predicates:
-            - Path=/api/clients/**
+            - Path=/api/client/**
+            
+        - id: tool-service
+          uri: lb://TOOL-SERVICE
+          predicates:
+            - Path=/api/tool/**
+            - Path=/api/catalog/**
         
         
         # Agrega más rutas según tus microservicios
