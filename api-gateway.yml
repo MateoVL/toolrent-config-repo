@@ -19,7 +19,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak:8080/realms/tingeso
+          #issuer-uri: http://keycloak:8080/realms/tingeso
+          jwk-set-uri: http://keycloak:8080/realms/tingeso/protocol/openid-connect/certs
           
   cloud:
     gateway:
