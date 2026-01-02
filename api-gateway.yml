@@ -33,12 +33,12 @@ spring:
           lower-case-service-id: true
       routes:
         - id: client-service
-          uri: lb://CLIENT-SERVICE
+          uri: lb://client-service
           predicates:
             - Path=/api/client/**
             
         - id: tool-service
-          uri: lb://TOOL-SERVICE
+          uri: lb://tool-service
           predicates:
             - Path=/api/tool/**
             - Path=/api/catalog/**
