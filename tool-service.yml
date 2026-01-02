@@ -1,5 +1,5 @@
 server:
-  port: 1  # Puerto dinámico asignado por el sistema
+  port: 0  # Puerto dinámico asignado por el sistema
 
 spring:
   application:
