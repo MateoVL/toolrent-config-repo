@@ -51,7 +51,8 @@ spring:
           uri: lb://tool-service
           predicates:
             - Path=/api/tool/**
-            - Path=/api/catalog/**
+          filters:
+            - RewritePath=/api/tool/(?<segment>.*), /$\{segment}
         
         
         # Agrega más rutas según tus microservicios
