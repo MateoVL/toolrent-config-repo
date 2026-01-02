@@ -12,7 +12,7 @@ logging:
   level:
     org.springframework.security: TRACE
     org.springframework.security.oauth2: TRACE
-    org.springframework.security.oauth2: DEBUG    
+    org.springframework.web.client: DEBUG    
 management:
   endpoints:
     web:
