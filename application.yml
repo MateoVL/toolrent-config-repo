@@ -14,6 +14,7 @@ logging:
     org.springframework.security.oauth2.server.resource.authentication: TRACE
     org.springframework.security.oauth2.jwt: TRACE
     org.springframework.web.client: DEBUG    
+    org.springframework.boot.autoconfigure.security: DEBUG
 management:
   endpoints:
     web:
