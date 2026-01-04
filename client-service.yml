@@ -6,7 +6,7 @@ eureka:
     service-url:
       defaultZone: ${EUREKA_SERVER_URL:http://eureka-server:8761/eureka/}
     register-with-eureka: true
-    fetch-registry: false
+    fetch-registry: true
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${random.value}
