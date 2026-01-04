@@ -53,7 +53,8 @@ spring:
           predicates:
             - Path=/api/tool/**
           filters:
-            - RewritePath=/api/tool/(?<segment>.*), /$\{segment}
+            - StripPrefix=0
+            #- RewritePath=/api/tool/(?<segment>.*), /$\{segment}
         
         
         # Agrega más rutas según tus microservicios
