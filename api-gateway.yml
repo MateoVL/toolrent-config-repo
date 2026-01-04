@@ -43,7 +43,7 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: client-service
+        - id: client-service-client
           uri: lb://client-service
           predicates:
             - Path=/api/client/**
@@ -52,6 +52,7 @@ spring:
           uri: lb://client-service
           predicates:
             - Path=/api/fine/**
+            
             
         - id: tool-service-tool
           uri: lb://tool-service
@@ -62,6 +63,7 @@ spring:
           uri: lb://tool-service
           predicates:
             - Path=/api/catalog/**
+         
          
         - id: kardex-service-
           uri: lb://kardex-service
