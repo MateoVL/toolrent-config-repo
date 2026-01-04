@@ -52,17 +52,16 @@ spring:
           uri: lb://tool-service
           predicates:
             - Path=/api/tool/**
-          filters:
-            - StripPrefix=0
         
         - id: tool-service-catalog
           uri: lb://tool-service
           predicates:
             - Path=/api/catalog/**
-          
-          filters:
-            - StripPrefix=0
-            #- RewritePath=/api/tool/(?<segment>.*), /$\{segment}
+         
+        - id: kardex-service-
+          uri: lb://kardex-service
+          predicates:
+            - Path=/api/kardex/**
         
         
         # Agrega más rutas según tus microservicios
