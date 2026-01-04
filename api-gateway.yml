@@ -52,6 +52,7 @@ spring:
           uri: lb://tool-service
           predicates:
             - Path=/api/tool/**
+            - Path=/api/catalog/**
           filters:
             - StripPrefix=0
             #- RewritePath=/api/tool/(?<segment>.*), /$\{segment}
