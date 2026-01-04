@@ -15,11 +15,11 @@ spring:
   application:
     name: tool-service
   
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://keycloak:8080/realms/tingeso
+  #security:
+  #  oauth2:
+  #    resourceserver:
+  #      jwt:
+  #        issuer-uri: http://keycloak:8080/realms/tingeso
 
   
   datasource:
