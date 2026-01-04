@@ -47,6 +47,11 @@ spring:
           uri: lb://client-service
           predicates:
             - Path=/api/client/**
+	
+	- id: client-service-fine
+          uri: lb://client-service
+          predicates:
+            - Path=/api/fine/**
             
         - id: tool-service-tool
           uri: lb://tool-service
