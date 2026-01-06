@@ -65,15 +65,20 @@ spring:
             - Path=/api/catalog/**
          
          
-        - id: kardex-service-
+        - id: kardex-service
           uri: lb://kardex-service
           predicates:
             - Path=/api/kardex/**
             
-        - id: fee-service-
+        - id: fee-service
           uri: lb://fee-service
           predicates:
             - Path=/api/fee/**
+        
+        - id: loan-service
+          uri: lb://loan-service
+          predicates:
+            - Path=/api/loan/**
         
         
         # Agrega más rutas según tus microservicios
