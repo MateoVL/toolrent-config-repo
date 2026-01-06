@@ -79,6 +79,11 @@ spring:
           uri: lb://loan-service
           predicates:
             - Path=/api/loan/**
+            
+        - id: report-service
+          uri: lb://report-service
+          predicates:
+            - Path=/api/report/**
         
         
         # Agrega más rutas según tus microservicios
