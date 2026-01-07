@@ -23,7 +23,7 @@ spring:
 
   
   datasource:
-    url: jdbc:mysql://mysql-loan:3306/clientdb
+    url: jdbc:mysql://mysql-client:3306/clientdb
     username: mateo
     password: 4321
     driver-class-name: com.mysql.cj.jdbc.Driver
