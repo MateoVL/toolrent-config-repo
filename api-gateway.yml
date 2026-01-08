@@ -30,6 +30,7 @@ spring:
             allowedOrigins: 
               - "http://localhost:3000"
               - "http://frontend"
+              - "*"
             allowedMethods:
               - GET
               - POST
