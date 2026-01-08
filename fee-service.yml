@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_SERVER_URL:http://eureka-server:8761/eureka/}
+      defaultZone: http://eureka-server:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
   instance:
@@ -23,9 +23,9 @@ spring:
 
   
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: jdbc:mysql://mysql-fee:3306/feedb
+    username: mateo
+    password: 4321
     driver-class-name: com.mysql.cj.jdbc.Driver
   
   jpa:
